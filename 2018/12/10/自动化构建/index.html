@@ -108,24 +108,24 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="browserifyBrowserify是一个管理前端依赖的工具，可以实现js模块化加载。使用node.js的CommonJS模块规范，使用module.export定义模块，使用require加载模块。browserify可以把互相依赖的js文件通过一行命令打包成为一个文件main.js。  browserify 【各自文件的位置】-o(被导入的文件) main.js  gulp基本使用使用np">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/12/08/hello-world/index.html">
+<meta property="og:title" content="自动化构建">
+<meta property="og:url" content="http://yoursite.com/2018/12/10/自动化构建/index.html">
 <meta property="og:site_name" content="RoyLiu&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="browserifyBrowserify是一个管理前端依赖的工具，可以实现js模块化加载。使用node.js的CommonJS模块规范，使用module.export定义模块，使用require加载模块。browserify可以把互相依赖的js文件通过一行命令打包成为一个文件main.js。  browserify 【各自文件的位置】-o(被导入的文件) main.js  gulp基本使用使用np">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-08T08:09:52.436Z">
+<meta property="og:updated_time" content="2018-12-10T15:30:13.441Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="自动化构建">
+<meta name="twitter:description" content="browserifyBrowserify是一个管理前端依赖的工具，可以实现js模块化加载。使用node.js的CommonJS模块规范，使用module.export定义模块，使用require加载模块。browserify可以把互相依赖的js文件通过一行命令打包成为一个文件main.js。  browserify 【各自文件的位置】-o(被导入的文件) main.js  gulp基本使用使用np">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/08/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/10/自动化构建/">
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>Hello World | RoyLiu's blog</title>
+  <title>自动化构建 | RoyLiu's blog</title>
   
 
 
@@ -300,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/10/自动化构建/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Roy Liu">
@@ -317,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">自动化构建
               
             
           </h1>
@@ -342,7 +342,7 @@
                 
               
 
-              <time title="创建时间：2018-12-08 11:07:28 / 修改时间：16:09:52" itemprop="dateCreated datePublished" datetime="2018-12-08T11:07:28+08:00">2018-12-08</time>
+              <time title="创建时间：2018-12-10 21:24:35 / 修改时间：23:30:13" itemprop="dateCreated datePublished" datetime="2018-12-10T21:24:35+08:00">2018-12-10</time>
             
 
             
@@ -380,16 +380,13 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h2 id="browserify"><a href="#browserify" class="headerlink" title="browserify"></a>browserify</h2><p>Browserify是一个管理前端依赖的工具，可以实现js模块化加载。使用node.js的CommonJS模块规范，使用module.export定义模块，使用require加载模块。<br>browserify可以把互相依赖的js文件通过一行命令打包成为一个文件main.js。</p>
+<blockquote>
+<p>browserify 【各自文件的位置】-o(被导入的文件) main.js</p>
+</blockquote>
+<h2 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h2><h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4><p>使用npm安装gulp后，创建gulpfile.js文件：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>)</span><br><span class="line"><span class="keyword">var</span> browserify = <span class="built_in">require</span>(<span class="string">'browserify'</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)<span class="comment">//是node核心模块之一</span></span><br><span class="line">gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    browserify().add(<span class="string">'js/index.js'</span>).bundle().pipe(fs.createWriteStream(<span class="string">'js/main.js'</span>))</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h4 id="自动化"><a href="#自动化" class="headerlink" title="自动化"></a>自动化</h4><p>使用watch监控来进行自动化。<br>需要安装run-sequence，可以一个任务调用其他任务。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>)</span><br><span class="line"><span class="keyword">var</span> browserify = <span class="built_in">require</span>(<span class="string">'browserify'</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="keyword">var</span> sequence = <span class="built_in">require</span>(<span class="string">'run-sequence'</span>)</span><br><span class="line">gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    sequence(<span class="string">'mainjs'</span>,<span class="string">'watch'</span>);</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'mainjs'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    browserify().add(<span class="string">'assets/js/index.js'</span>).bundle().pipe(fs.createWriteStream(<span class="string">'js/main.js'</span>))</span><br><span class="line">&#125;)</span><br><span class="line">gulp.watch(<span class="string">'watch'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    gulp.watch([<span class="string">'assets/js/*.js'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">// 当assets/js/*.js源文件有变动时执行</span></span><br><span class="line">        sequence(<span class="string">'mainjs'</span>);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h4 id="使用watchify插件自动化"><a href="#使用watchify插件自动化" class="headerlink" title="使用watchify插件自动化"></a>使用watchify插件自动化</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>)</span><br><span class="line"><span class="keyword">var</span> browserify = <span class="built_in">require</span>(<span class="string">'browserify'</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="keyword">var</span> sequence = <span class="built_in">require</span>(<span class="string">'run-sequence'</span>)</span><br><span class="line"><span class="keyword">var</span> watchify = <span class="built_in">require</span>(<span class="string">'watchify'</span>)</span><br><span class="line">gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    sequence(<span class="string">'mainjs'</span>);</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'mainjs'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> b = browserify(&#123;</span><br><span class="line">        entries: [<span class="string">'assets/js/index.js'</span>],</span><br><span class="line">        cache: &#123;&#125;,</span><br><span class="line">        packageCache: &#123;&#125;,</span><br><span class="line">        plugin: [watchify]</span><br><span class="line">    &#125;);</span><br><span class="line">    b.bundle().pipe(fs.createWriteStream(<span class="string">'js/main.js'</span>));</span><br><span class="line">    b.on(<span class="string">'update'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        b.bundle().pipe(fs.createWriteStream(<span class="string">'js/main.js'</span>));</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -419,15 +416,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/08/css预处理器/" rel="next" title="CSS预处理器">
+                <i class="fa fa-chevron-left"></i> CSS预处理器
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/08/css预处理器/" rel="prev" title="CSS预处理器">
-                CSS预处理器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -551,7 +548,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#browserify"><span class="nav-number">1.</span> <span class="nav-text">browserify</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gulp"><span class="nav-number">2.</span> <span class="nav-text">gulp</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本使用"><span class="nav-number">2.0.1.</span> <span class="nav-text">基本使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动化"><span class="nav-number">2.0.2.</span> <span class="nav-text">自动化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用watchify插件自动化"><span class="nav-number">2.0.3.</span> <span class="nav-text">使用watchify插件自动化</span></a></li></ol></li></ol></div>
             
 
           </div>
