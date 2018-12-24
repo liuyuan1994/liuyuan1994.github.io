@@ -108,24 +108,25 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="前言在做的安卓项目中提了新需求，要求在完成页面点击返回键后直接返回详情页，使用vue-router貌似没有解决办法，于是在这里监听了popstate事件。  当活动历史记录条目更改时，将触发popstate事件。如果被激活的历史记录条目是通过对history.pushState（）的调用创建的，或者受到对history.replaceState（）的调用的影响，popstate事件的state属性">
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/12/08/hello-world/index.html">
+<meta property="og:title" content="vue处理监听浏览器或手机返回键">
+<meta property="og:url" content="http://yoursite.com/2018/12/24/vue处理监听浏览器或手机返回键/index.html">
 <meta property="og:site_name" content="RoyLiu&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言在做的安卓项目中提了新需求，要求在完成页面点击返回键后直接返回详情页，使用vue-router貌似没有解决办法，于是在这里监听了popstate事件。  当活动历史记录条目更改时，将触发popstate事件。如果被激活的历史记录条目是通过对history.pushState（）的调用创建的，或者受到对history.replaceState（）的调用的影响，popstate事件的state属性">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-08T08:09:52.436Z">
+<meta property="og:updated_time" content="2018-12-24T15:25:18.932Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="vue处理监听浏览器或手机返回键">
+<meta name="twitter:description" content="前言在做的安卓项目中提了新需求，要求在完成页面点击返回键后直接返回详情页，使用vue-router貌似没有解决办法，于是在这里监听了popstate事件。  当活动历史记录条目更改时，将触发popstate事件。如果被激活的历史记录条目是通过对history.pushState（）的调用创建的，或者受到对history.replaceState（）的调用的影响，popstate事件的state属性">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/08/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/24/vue处理监听浏览器或手机返回键/">
 
 
 
@@ -135,7 +136,7 @@
   };
 </script>
 
-  <title>Hello World | RoyLiu's blog</title>
+  <title>vue处理监听浏览器或手机返回键 | RoyLiu's blog</title>
   
 
 
@@ -300,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/24/vue处理监听浏览器或手机返回键/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Roy Liu">
@@ -317,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">vue处理监听浏览器或手机返回键
               
             
           </h1>
@@ -342,7 +343,7 @@
                 
               
 
-              <time title="创建时间：2018-12-08 11:07:28 / 修改时间：16:09:52" itemprop="dateCreated datePublished" datetime="2018-12-08T11:07:28+08:00">2018-12-08</time>
+              <time title="创建时间：2018-12-24 23:07:57 / 修改时间：23:25:18" itemprop="dateCreated datePublished" datetime="2018-12-24T23:07:57+08:00">2018-12-24</time>
             
 
             
@@ -380,15 +381,11 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在做的安卓项目中提了新需求，要求在完成页面点击返回键后直接返回详情页，使用vue-router貌似没有解决办法，于是在这里监听了popstate事件。</p>
+<blockquote>
+<p>当活动历史记录条目更改时，将触发popstate事件。如果被激活的历史记录条目是通过对history.pushState（）的调用创建的，或者受到对history.replaceState（）的调用的影响，popstate事件的state属性包含历史条目的状态对象的副本。</p>
+</blockquote>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">mounted()&#123;</span><br><span class="line">    history.pushState(<span class="literal">null</span>, <span class="literal">null</span>, <span class="built_in">document</span>.URL);<span class="comment">// 通过pushstate当前页面使得popstate监听可以生效</span></span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'popstate'</span>, <span class="keyword">this</span>.back, <span class="literal">false</span>);</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// 页面销毁时取消监听</span></span><br><span class="line">destroyed()&#123;</span><br><span class="line">  <span class="built_in">window</span>.removeEventListener(<span class="string">'popstate'</span>, <span class="keyword">this</span>.back, <span class="literal">false</span>);</span><br><span class="line">&#125;,</span><br><span class="line">back()&#123;</span><br><span class="line">    <span class="keyword">this</span>.$router.go(<span class="number">-3</span>); <span class="comment">// 保留详情页的跳转历史</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -410,6 +407,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+        </div>
+      
 
       
       
@@ -419,15 +422,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/17/国双科技面试/" rel="next" title="国双科技面试题">
+                <i class="fa fa-chevron-left"></i> 国双科技面试题
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/08/css预处理器/" rel="prev" title="CSS预处理器">
-                CSS预处理器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -555,7 +558,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
